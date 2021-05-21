@@ -3,10 +3,3 @@
   background: transparent;
 }
 
-/* home */
-#hero-home {
-  background-image: url(./images/background-test.jpg);
-  background-position: center;
-  background-repeat: no-repeat;
-  background-size: cover;
-}
