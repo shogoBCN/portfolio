@@ -1,6 +1,13 @@
 /* navbar */
-@media (min-width: 767px) {
+@media (min-width: 768px) {
   #xsnavbar {
     display: none !important;
+  }
+
+}
+
+@media (max-height: 600px) {
+  .mypicture {
+    padding-top: 50px;
   }
 }

@@ -1,6 +1,10 @@
 /* global */
+html {
+  scroll-behavior: smooth;
+}
+
 body {
-  font-family: "Larsseit", Helvetica, sans-serif;
+  font-family: "Nunito", Arial, Helvetica, sans-serif;
 }
 
 .spacer1 {
@@ -12,15 +16,65 @@ body {
 
 .spacer2 {
   width: 100%;
-  height: 60px;
+  height: 78px;
+  display: block;
+  clear: both;
+}
+
+.spacer3 {
+  width: 100%;
+  height: 150px;
   display: block;
   clear: both;
 }
 
 /* navbar */
+
+.navbar a {
+  color: black;
+}
+
+#navbarSupportedContent .nav-item {
+  border-bottom: 2px solid transparent;
+}
+
+#navbarSupportedContent .nav-item:hover {
+  border-bottom: 2px solid red;
+}
+
+#navbarSupportedContent .nav-item a {
+  font-size: 15px;
+  font-weight: 500;
+}
+
+.navbar-brand {
+  padding-left: 16px;
+}
+
+.navbar-brand a {
+  font-size: 20px;
+  font-weight: 600;
+  text-decoration: none;
+  text-transform: uppercase;
+}
+
 .navbar-custom {
   background: white;
-  border-bottom: 1px solid grey;
+  border-bottom: 1px solid #eee;
+}
+
+#xsnavbar a {
+  font-size: 15px;
+  font-weight: 500;
+  color: #888;
+}
+
+#xsnavbar a:hover {
+  color: black;
+}
+
+.xsnav-dim .nav-item {
+  border-bottom: 1px solid #eee;
 }
 
 /* home */
@@ -46,3 +100,22 @@ body {
   border: solid 3px rgb(255, 255, 255); 
 }
 
+#thatsme h2 {
+  font-size: 45px;
+}
+
+.mytitles {
+  font-size: 24px;
+}
+
+#autotype {
+  display: inline-block;
+  
+}
+
+@keyframes typedjsBlink {
+  50% { opacity: 0; }
+}
+.typed-cursor {
+  animation: typedjsBlink 0.7s infinite;
+}
