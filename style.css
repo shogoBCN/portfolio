@@ -30,6 +30,23 @@ body {
 
 /* navbar */
 
+.navbar-brand p {
+  display: inline-block;
+  margin-bottom: -16px;
+}
+
+.navbar-brand {
+  padding-left: 16px;
+}
+
+.navbar-brand a {
+  display: inline-block;
+  font-size: 20px;
+  font-weight: 600;
+  text-decoration: none;
+  text-transform: uppercase;
+}
+
 .navbar a {
   color: black;
 }
@@ -39,7 +56,11 @@ body {
 }
 
 #navbarSupportedContent .nav-item:hover {
-  border-bottom: 2px solid red;
+  border-bottom: 2px solid rgb(163, 163, 163);
+}
+
+#navbarSupportedContent .nav-item a:hover {
+  color: rgb(163, 163, 163) !important;
 }
 
 #navbarSupportedContent .nav-item a {
@@ -47,20 +68,10 @@ body {
   font-weight: 500;
 }
 
-.navbar-brand {
-  padding-left: 16px;
-}
-
-.navbar-brand a {
-  font-size: 20px;
-  font-weight: 600;
-  text-decoration: none;
-  text-transform: uppercase;
-}
-
 .navbar-custom {
   background: white;
   border-bottom: 1px solid #eee;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
 }
 
 #xsnavbar a {
@@ -118,4 +129,56 @@ body {
 }
 .typed-cursor {
   animation: typedjsBlink 0.7s infinite;
+}
+
+/* about me */
+.text-grey {
+  color: rgb(163, 163, 163);
+}
+
+.aspectRatioBox {
+  padding-top: calc(1 * 100%); 
+  background-size: cover;
+  background-position: center;
+  }
+
+.pic-frame {
+  padding: 10px;
+  border-radius: .25rem!important;
+  box-shadow: rgb(58 78 95 / 20%) 0 10px 16px, rgb(58 78 95 / 5%) 0 -5px 16px;
+  background-color: #fff;
+}
+
+.about-title p {
+  font-size: 32px;
+  font-weight: 600;
+}
+
+.social-box {
+  position: relative;
+  padding-left: 15px;
+}
+
+.about-title p, .social-box {
+  display: inline-block;
+}
+
+.social-box .social-icons a {
+  width: 40px;
+  height: 40px;
+  line-height: 40px;
+  font-size: 17px;
+  background: #111;
+  border: 1px solid #111;
+  color: #fff;
+  border-radius: 3px;
+  margin-right: 10px;
+  text-align: center;
+  vertical-align: top;
+  transition: ease all 0.55s;
+}
+
+.social-box .social-icons a:hover {
+  background: transparent;
+  color: #111111;
 }
