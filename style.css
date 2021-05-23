@@ -78,7 +78,9 @@ body {
   font-size: 15px;
   font-weight: 500;
   color: #888;
+  padding-left: 16px;
 }
+  
 
 #xsnavbar a:hover {
   color: black;
