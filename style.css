@@ -23,7 +23,7 @@ body {
 
 .spacer3 {
   width: 100%;
-  height: 150px;
+  height: 100px;
   display: block;
   clear: both;
 }
@@ -56,11 +56,11 @@ body {
 }
 
 #navbarSupportedContent .nav-item:hover {
-  border-bottom: 2px solid rgb(163, 163, 163);
+  border-bottom: 2px solid rgb(51, 153, 255);
 }
 
 #navbarSupportedContent .nav-item a:hover {
-  color: rgb(163, 163, 163) !important;
+  color: rgb(51, 153, 255) !important;
 }
 
 #navbarSupportedContent .nav-item a {
@@ -93,6 +93,14 @@ body {
 /* home */
 #home {
   background-image: url(./images/snowbackground2.jpg);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-attachment: fixed;
+}
+
+#services {
+  background-image: url(./images/snowbackground.jpg);
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
@@ -135,14 +143,15 @@ body {
 
 /* about me */
 .text-grey {
-  color: rgb(163, 163, 163);
+  color: rgb(51, 153, 255);
 }
 
 .aspectRatioBox {
+  position: relative;
   padding-top: calc(1 * 100%); 
   background-size: cover;
   background-position: center;
-  }
+}
 
 .pic-frame {
   padding: 10px;
@@ -182,5 +191,106 @@ body {
 
 .social-box .social-icons a:hover {
   background: transparent;
-  color: #111111;
+  color: rgb(51, 153, 255);
+}
+
+/* services */
+#services-desc p {
+  display: inline-block;
+  font-size: 30px;
+}
+
+.service-box {
+  background: rgba(0, 0, 0, 0.2) !important;
+  border-radius: 10px;
+  border: 5px solid transparent; 
+  margin-bottom: 30px;
+}
+
+.service-box-dim {
+  padding: 45px 25px 45px 25px;
+  background-size: cover;
+  background-position: center;
+  }
+
+#hover-box {
+  border: solid 4px transparent;
+}
+
+#hover-box i {
+  background-color: transparent;
+}
+
+#hover-box:hover i{
+  color: white;
+  transition-timing-function: ease;
+}
+
+#hover-box:hover {
+  background-color: rgb(51, 153, 255) !important;
+  transition-timing-function: ease;
+  transition: 1s;
+  color: white;
+  border: solid 4px white;
+}
+
+#services i {
+  font-size: 25px !important;
+  color: rgb(51, 153, 255);
+}
+
+#services p {
+  padding-top: 5px;
+}
+
+#services h6 {
+  font-size: 20px;
+  font-weight: 600;
+} 
+
+#services .container {
+  padding-left: 10;
+  padding-right: 10;
+}
+
+/* Portfolio */
+#portfolio-desc p {
+  display: inline-block;
+  font-size: 30px;
+}
+
+.port-frame {
+  border: solid 10px white;
+  box-shadow: rgb(58 78 95 / 20%) 0 10px 16px, rgb(58 78 95 / 5%) 0 -5px 16px;
+  border-radius: 4%;
+}
+
+.overlay2 {
+  position: absolute;
+  top: 10px;
+  bottom: 0;
+  left: 25px;
+  right: 0;
+  height: calc(100% - 20px);
+  width: calc(100% - 50px);
+  opacity: 0;
+  transition: 1s ease;
+  background-color: rgba(51,153,255,1);
+}
+
+.port-frame:hover .overlay2 {
+  opacity: 1;
+}
+
+.port-item-title {
+  color: white;
+  font-size: 25px;
+  font-weight: bold;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+  text-align: center;
 }

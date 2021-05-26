@@ -13,6 +13,12 @@
 }
 
 /* about me section */
+@media (max-width: 767px) {
+  #about-adjust {
+  text-align: center !important;
+  }
+}
+
 @media (max-width: 991px) and (min-width: 768px) {  
   .about-title p {
     font-size: 20px !important;
@@ -30,3 +36,4 @@
     font-size: 14px !important;
   }
 }
+
