@@ -44,7 +44,6 @@ body {
   font-size: 20px;
   font-weight: 600;
   text-decoration: none;
-  text-transform: uppercase;
 }
 
 .navbar a {
@@ -80,7 +79,7 @@ body {
   color: #888;
   padding-left: 16px;
 }
-  
+
 
 #xsnavbar a:hover {
   color: black;
@@ -100,8 +99,9 @@ body {
 }
 
 .full-screen {
-  min-height: 100vh; }
-  
+  min-height: 100vh;
+}
+
 .overlay {
   top: 0;
   background-color: rgba(54, 54, 54, 0.6);
@@ -110,7 +110,7 @@ body {
 .my-pic {
   border-radius: 50%;
   width: 200px;
-  border: solid 3px rgb(255, 255, 255); 
+  border: solid 3px rgb(255, 255, 255);
 }
 
 #thatsme h2 {
@@ -123,12 +123,15 @@ body {
 
 #autotype {
   display: inline-block;
-  
+
 }
 
 @keyframes typedjsBlink {
-  50% { opacity: 0; }
+  50% {
+    opacity: 0;
+  }
 }
+
 .typed-cursor {
   animation: typedjsBlink 0.7s infinite;
 }
@@ -140,14 +143,14 @@ body {
 
 .aspectRatioBox {
   position: relative;
-  padding-top: calc(1 * 100%); 
+  padding-top: calc(1 * 100%);
   background-size: cover;
   background-position: center;
 }
 
 .pic-frame {
   padding: 10px;
-  border-radius: .25rem!important;
+  border-radius: .25rem !important;
   box-shadow: rgb(58 78 95 / 20%) 0 10px 16px, rgb(58 78 95 / 5%) 0 -5px 16px;
   background-color: #fff;
 }
@@ -162,7 +165,8 @@ body {
   padding-left: 15px;
 }
 
-.about-title p, .social-box {
+.about-title p,
+.social-box {
   display: inline-block;
 }
 
@@ -203,7 +207,7 @@ body {
 .service-box {
   background: rgba(0, 0, 0, 0.2) !important;
   border-radius: 10px;
-  border: 5px solid transparent; 
+  border: 5px solid transparent;
   margin-bottom: 30px;
 }
 
@@ -211,7 +215,7 @@ body {
   padding: 45px 25px 45px 25px;
   background-size: cover;
   background-position: center;
-  }
+}
 
 #hover-box {
   border: solid 4px transparent;
@@ -221,7 +225,7 @@ body {
   background-color: transparent;
 }
 
-#hover-box:hover i{
+#hover-box:hover i {
   color: white;
   transition-timing-function: ease;
 }
@@ -242,7 +246,7 @@ body {
 #services h6 {
   font-size: 20px;
   font-weight: 600;
-} 
+}
 
 #services .container {
   padding-left: 10;
@@ -255,6 +259,11 @@ body {
   font-size: 30px;
 }
 
+.portfolio-item {
+  position: relative;
+  overflow: hidden;
+}
+
 .port-frame {
   border: solid 10px white;
   box-shadow: rgb(58 78 95 / 20%) 0 10px 16px, rgb(58 78 95 / 5%) 0 -5px 16px;
@@ -263,15 +272,15 @@ body {
 
 .overlay2 {
   position: absolute;
-  top: 10px;
+  top: 0;
   bottom: 0;
-  left: 40px;
+  left: 0;
   right: 0;
-  height: calc(100% - 20px);
-  width: calc(100% - 50px);
+  height: calc(100% - 0px);
+  width: calc(100% + 20px);
   opacity: 0;
   transition: 1s ease;
-  background-color: rgba(51,153,255,0.85);
+  background-color: rgba(51, 153, 255, 0.85);
 }
 
 .port-frame:hover .overlay2 {
@@ -298,16 +307,24 @@ body {
   text-align: center;
 }
 
-.port-item-title a, .port-item-desc a {
+.port-item-title,
+.port-item-desc {
   color: white;
   font-weight: bold;
   text-decoration: none;
   font-size: 24px;
 }
 
-.port-item-desc a {
+.item-label {
+  text-align: center;
+  font-weight: bold;
+  margin-bottom: 10px;
+  /* Optional: add some space between the label and the box */
+}
+
+.port-item-desc {
   font-size: 15px;
-}  
+}
 
 /* contact */
 #contact {
@@ -330,7 +347,7 @@ body {
   font-weight: bold;
 }
 
-#form-title p  {
+#form-title p {
   color: black;
   font-size: 25px;
 }
@@ -344,7 +361,7 @@ body {
 }
 
 .form-button {
-  background-color: rgba(51,153,255,1);
+  background-color: rgba(51, 153, 255, 1);
   box-shadow: rgb(58 78 95 / 20%) 0 10px 16px, rgb(58 78 95 / 5%) 0 -5px 16px;
   color: white;
   display: inline-block;
@@ -393,7 +410,8 @@ body {
 }
 
 /* footer */
-.footer-brand a, .footer-brand p {
+.footer-brand a,
+.footer-brand p {
   display: inline-block;
   font-size: 25px;
   font-weight: 600;
@@ -402,5 +420,5 @@ body {
 }
 
 .footer-separator {
-  border-bottom: 1px solid rgba(0,0,0,.1);
+  border-bottom: 1px solid rgba(0, 0, 0, .1);
 }
